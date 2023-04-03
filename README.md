@@ -49,4 +49,4 @@ PLACES
  Weapon : Gun, Sword, Rifle <br /> 
  Armor : Light, Medium, Heavy
  
- 
+ ![Employee data]( "Class-Diagram")
