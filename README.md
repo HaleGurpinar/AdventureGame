@@ -28,3 +28,10 @@ ARMORS
 | Light | 1 | 1 | 15 |
 | Medium | 2 | 3 | 25 |
 | Heavy | 3 | 5 | 40 |
+
+PLACES
+* Security House  <br />
+ Feature: 
+* Cave
+ Monster: Zombie(1-3)
+ 
