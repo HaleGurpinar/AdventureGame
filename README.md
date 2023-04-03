@@ -36,15 +36,15 @@ PLACES
  Monster : Zombie(1-3)   <br />
  Feature : War+ Loot   <br />
  Item : Food  <br />
- * Forest  <br />
+* Forest  <br />
  Monster : Vampire(1-3)  <br />
  Feature : War + Loot
  Item : Firewood  <br />
- * River  <br />
+* River  <br />
  Monster : Bear(1-3)  <br />
  Feature : War + Loot
  Item : Water  <br />
- * Store <br />
+* Store <br />
  Feature : Buy support objects <br />
  Weapon : Gun, Sword, Rifle <br /> 
  Armor : Light, Medium, Heavy
