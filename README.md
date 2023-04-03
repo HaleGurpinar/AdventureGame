@@ -38,11 +38,11 @@ PLACES
  Item : Food  <br />
 * Forest  <br />
  Monster : Vampire(1-3)  <br />
- Feature : War + Loot
+ Feature : War + Loot  <br />
  Item : Firewood  <br />
 * River  <br />
  Monster : Bear(1-3)  <br />
- Feature : War + Loot
+ Feature : War + Loot <br />
  Item : Water  <br />
 * Store <br />
  Feature : Buy support objects <br />
