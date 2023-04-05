@@ -1,17 +1,15 @@
 package com.patika;
 
-public class Player {
+public abstract class GameChar {
 
     private int damage;
     private int health;
     private int money;
-    private String name;
-    private String charName;
-    //Inventory inventory;
 
-
-    public Player(String name) {
-        this.name = name;
+    public GameChar(int damage, int health, int money) {
+        this.damage = damage;
+        this.health = health;
+        this.money = money;
     }
 
     public int getDamage() {
@@ -37,23 +35,4 @@ public class Player {
     public void setMoney(int money) {
         this.money = money;
     }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getCharName() {
-        return charName;
-    }
-
-    public void setCharName(String charName) {
-        this.charName = charName;
-    }
-
-    public void selectChar(){}
-
 }
