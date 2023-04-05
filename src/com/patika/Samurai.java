@@ -1,7 +1,7 @@
 package com.patika;
 
 public class Samurai extends GameChar{
-    public Samurai(int damage, int health, int money) {
-        super(5, 21, 15);
+    public Samurai(String name, int damage, int health, int money) {
+        super("Samurai", 5, 21, 15);
     }
 }
