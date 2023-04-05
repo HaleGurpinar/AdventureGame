@@ -1,5 +1,12 @@
 package com.patika;
 
+import GameCharacter.Archer;
+import GameCharacter.GameChar;
+import GameCharacter.Knight;
+import GameCharacter.Samurai;
+
+import java.util.Scanner;
+
 public class Player {
 
     private int damage;
@@ -8,6 +15,7 @@ public class Player {
     private String name;
     private String charName;
     //Inventory inventory;
+    Scanner scanner=new Scanner(System.in);
 
 
     public Player(String name) {
@@ -54,6 +62,58 @@ public class Player {
         this.charName = charName;
     }
 
-    public void selectChar(){}
+
+    public void showCharacters(){
+
+        GameChar[] charList ={new Samurai(),new Archer(),new Knight()};
+        System.out.println("----------------------------------------------------------------------------");
+        System.out.println("--------------------------------CHARACTERS----------------------------------");
+        for (GameChar gameChar : charList){
+            System.out.println("Id -> "+ gameChar.getId()+
+                    "\t Character -> "+ gameChar.getName()+
+                    "\t Damage -> "+ gameChar.getDamage()+
+                    "\t Health -> "+ gameChar.getHealth()+
+                    "\t Money -> "+ gameChar.getMoney());
+        }
+        System.out.println("----------------------------------------------------------------------------");
+    }
+
+    public void selectChar(){
+        showCharacters();
+        boolean isSelectOkay=false;
+        while(!isSelectOkay){
+            System.out.println("Select a character: ");
+            int selectChar=scanner.nextInt();
+
+            switch (selectChar){
+                case 1:
+                    initPlayer(new Samurai());
+                    isSelectOkay=true;
+                    break;
+                case 2:
+                    initPlayer(new Archer());
+                    isSelectOkay=true;
+                    break;
+                case 3:
+                    initPlayer(new Knight());
+                    isSelectOkay=true;
+                    break;
+                default:
+                    System.out.println("Entered Wrong Id Number");
+            }
+        }
+        System.out.println(
+                "Chosen Character -> "+ this.getCharName()+
+                "\t Damage -> "+ this.getDamage()+
+                "\t Health -> "+ this.getHealth()+
+                "\t Money -> "+ this.getMoney());
+    }
+
+    public void initPlayer(GameChar gameChar){
+        this.setDamage(gameChar.getDamage());
+        this.setCharName(gameChar.getName());
+        this.setHealth(gameChar.getHealth());
+        this.setMoney(gameChar.getMoney());
+    }
 
 }

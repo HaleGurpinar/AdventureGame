@@ -15,5 +15,6 @@ public class Game {
         String playerName=input.nextLine();
         Player player=new Player(playerName);
         System.out.println("Welcome "+player.getName());
+        player.selectChar();
     }
 }
