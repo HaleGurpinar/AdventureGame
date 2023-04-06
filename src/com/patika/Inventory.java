@@ -8,6 +8,6 @@ public class Inventory {
     private  String weaponName;
     private String armorName;
     private int weaponDamage;
-    private int armorDefence;
+
 
 }
