@@ -44,7 +44,7 @@ PLACES
  Monster : Bear(1-3)  <br />
  Feature : War + Loot <br />
  Item : Water  <br />
-* Store <br />
+* ToolStore <br />
  Feature : Buy support objects <br />
  Weapon : Gun, Sword, Rifle <br /> 
  Armor : Light, Medium, Heavy
