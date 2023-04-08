@@ -8,7 +8,7 @@ public class SafeHouse extends NormalLoc{
     }
 
     @Override
-    boolean onLocation() {
+    public boolean onLocation() {
         System.out.println("------------------------------------------------------------");
         System.out.println("------------------SAFEHOUSE---------------------------------");
         System.out.println("Player gain health....");

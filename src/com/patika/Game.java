@@ -1,5 +1,8 @@
 package com.patika;
 
+import Locations.Location;
+import Locations.NormalLoc;
+
 import java.util.Scanner;
 
 public class Game {
@@ -16,5 +19,6 @@ public class Game {
         Player player=new Player(playerName);
         System.out.println("Welcome "+player.getName());
         player.selectChar();
+        player.on
     }
 }

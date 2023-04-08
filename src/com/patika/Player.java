@@ -4,6 +4,9 @@ import GameCharacter.Archer;
 import GameCharacter.GameChar;
 import GameCharacter.Knight;
 import GameCharacter.Samurai;
+import Locations.Location;
+import Locations.SafeHouse;
+import Locations.ToolStore;
 
 import java.util.Scanner;
 
@@ -109,6 +112,31 @@ public class Player {
                 "\t Money -> "+ this.getMoney());
     }
 
+    public void selectLoc(){
+        Location[] locations={new SafeHouse(this),new ToolStore(this)};
+        System.out.println("--------------------------------------------------------------");
+        System.out.println("-------------------------LOCATIONS----------------------------");
+        for(Location loc:locations){
+            System.out.println("Location id -> "+ loc.getId()+
+                    "\t Location Name -> "+ loc.getName());
+        }
+        System.out.println("---------------------------------------------------------------");
+
+        System.out.println("Select Location: ");
+        int selectLocation=scanner.nextInt();
+
+        Location location;
+
+        switch (selectLocation){
+            case 1:
+                location=new SafeHouse(this);
+                location.onLocation();
+                break;
+            case 2:
+                location=new ToolStore(this);
+                location.onLocation();
+        }
+    }
     public void initPlayer(GameChar gameChar){
         this.setDamage(gameChar.getDamage());
         this.setCharName(gameChar.getName());
