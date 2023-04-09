@@ -7,17 +7,16 @@ import Inventory.WearableItems.WearableItem;
 
 import java.util.Scanner;
 
-public class ToolStore extends NormalLoc{
+public class ToolStore extends NormalLoc {
     public ToolStore(Player player) {
-        super(2,player, "ToolStore");
+        super(2, player, "ToolStore");
     }
 
-    private Scanner scanner= new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
 
     @Override
     public boolean onLocation() {
-        System.out.println("-------------------------------------------------------------------------");
-        System.out.println("-----------------------------TOOLSTORE-----------------------------------");
+        mainMenu();
         return true;
     }
 
@@ -26,16 +25,16 @@ public class ToolStore extends NormalLoc{
         System.out.println("------------------------------- TOOLSTORE -------------------------------");
         WearableItem[] itemList = {new Armor(), new Weapon()};
         for (WearableItem wearableItems : itemList) {
-            System.out.println("Tür Id -> " + wearableItems.getTypeId() + "\t Eşya Türü -> " + wearableItems.getType());
+            System.out.println("Type Id -> " + wearableItems.getTypeId() + "\t Item Type -> " + wearableItems.getType());
         }
-        System.out.println("-----------------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------------------");
         System.out.println("Üst menü için 0 tuşlayınız.");
         System.out.print("Select Item Type: ");
         int selectType = scanner.nextInt();
 
         switch (selectType) {
             case 0:
-                getPlayer().selectLocation();
+                getPlayer().selectLoc();
                 break;
             case 1:
                 armorMenu();
@@ -45,4 +44,13 @@ public class ToolStore extends NormalLoc{
                 break;
         }
     }
+
+    public void armorMenu() {
+        System.out.println("g");
+    }
+
+
+    public void weaponMenu() {
+    }
 }
+
