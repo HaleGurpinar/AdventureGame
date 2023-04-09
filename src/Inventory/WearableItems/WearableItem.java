@@ -1,4 +1,4 @@
-package com.patika;
+package Inventory.WearableItems;
 
 public abstract class WearableItem {
 

@@ -1,7 +1,7 @@
 package Locations;
 
 import com.patika.Player;
-import com.patika.WearableItem;
+import Inventory.WearableItems.WearableItem;
 
 import java.util.Scanner;
 
