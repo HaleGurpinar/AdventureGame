@@ -19,6 +19,6 @@ public class Game {
         Player player=new Player(playerName);
         System.out.println("Welcome "+player.getName());
         player.selectChar();
-        player.on
+        player.selectLoc();
     }
 }

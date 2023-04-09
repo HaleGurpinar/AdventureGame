@@ -114,13 +114,13 @@ public class Player {
 
     public void selectLoc(){
         Location[] locations={new SafeHouse(this),new ToolStore(this)};
-        System.out.println("--------------------------------------------------------------");
-        System.out.println("-------------------------LOCATIONS----------------------------");
+        System.out.println("-------------------------------------------------------------------------");
+        System.out.println("-------------------------------LOCATIONS---------------------------------");
         for(Location loc:locations){
             System.out.println("Location id -> "+ loc.getId()+
                     "\t Location Name -> "+ loc.getName());
         }
-        System.out.println("---------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------------------");
 
         System.out.println("Select Location: ");
         int selectLocation=scanner.nextInt();
