@@ -1,4 +1,4 @@
-package Locations;
+package Locations.NormalLoc;
 
 import Inventory.WearableItems.Armor;
 import Inventory.WearableItems.Weapon;
@@ -28,7 +28,7 @@ public class ToolStore extends NormalLoc {
             System.out.println("Type Id -> " + wearableItems.getTypeId() + "\t Item Type -> " + wearableItems.getType());
         }
         System.out.println("-------------------------------------------------------------------------");
-        System.out.println("Üst menü için 0 tuşlayınız.");
+        System.out.println("0 for Upper Menu");
         System.out.print("Select Item Type: ");
         int selectType = scanner.nextInt();
 

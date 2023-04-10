@@ -1,4 +1,4 @@
-package Locations;
+package Locations.NormalLoc;
 
 import Locations.Location;
 import com.patika.Player;

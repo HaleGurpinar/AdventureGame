@@ -5,8 +5,8 @@ import GameCharacter.GameChar;
 import GameCharacter.Knight;
 import GameCharacter.Samurai;
 import Locations.Location;
-import Locations.SafeHouse;
-import Locations.ToolStore;
+import Locations.NormalLoc.SafeHouse;
+import Locations.NormalLoc.ToolStore;
 
 import java.util.Scanner;
 

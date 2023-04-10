@@ -1,8 +1,8 @@
-package Locations;
+package Locations.NormalLoc;
 
 import com.patika.Player;
 
-public class SafeHouse extends NormalLoc{
+public class SafeHouse extends NormalLoc {
     public SafeHouse(Player player) {
         super(1, player, "SafeHouse");
     }

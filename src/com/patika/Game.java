@@ -1,8 +1,5 @@
 package com.patika;
 
-import Locations.Location;
-import Locations.NormalLoc;
-
 import java.util.Scanner;
 
 public class Game {
