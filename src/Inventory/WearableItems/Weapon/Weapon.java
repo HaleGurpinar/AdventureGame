@@ -19,7 +19,7 @@ public class Weapon extends WearableItem {
     }
 
     public Weapon(){
-        super(2, "Inventory/WearableItems/Weapon");
+        super(2, "Weapon");
     }
 
     public int getId() {

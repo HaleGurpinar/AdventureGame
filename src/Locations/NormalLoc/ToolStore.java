@@ -1,6 +1,6 @@
 package Locations.NormalLoc;
 
-import Inventory.Inventory;
+
 import Inventory.WearableItems.Armor.Armor;
 import Inventory.WearableItems.Armor.Heavy;
 import Inventory.WearableItems.Armor.Light;
@@ -115,7 +115,7 @@ public class ToolStore extends NormalLoc {
         for (Weapon weapon:weaponList){
             System.out.println("Weapon | Id -> "+ weapon.getId()+
                     "\t Name -> "+ weapon.getName()+
-                    "\t Defense -> "+ weapon.getDamage()+
+                    "\t Damage -> "+ weapon.getDamage()+
                     "\t Money -> " +weapon.getMoney());
         }
         System.out.println("-------------------------------------------------------------------------");
@@ -149,7 +149,17 @@ public class ToolStore extends NormalLoc {
         if (getPlayer().getMoney()>= weapon.getMoney()){
             getPlayer().setWeaponDamage(weapon.getDamage());
             getPlayer().setWeaponName(weapon.getName());
-        }
+
+        System.out.println("Got your weapon successfully");
+        System.out.println("Damage -> "+(getPlayer().getDamage()+getPlayer().getWeaponDamage()));
+        getPlayer().setMoney(getPlayer().getMoney()-weapon.getMoney());
+        System.out.println("--------------------------------------------------------------------");
+        mainMenu();
+    }
+    else {
+        System.out.println("Insufficient Money");
+        weaponMenu();
+    }
     }
 }
 
