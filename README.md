@@ -16,7 +16,7 @@ MONSTERS
 | Bear | 3 | 7 | 20 | 12 |
 
 WEAPONS
-| Weapon | ID | Damage | Money |
+| Inventory.WearableItems.Weapon.Weapon | ID | Damage | Money |
 | :---: | :---: | :---: | :---: |
 | Gun | 1 | 2 | 25 |
 | Sword | 2 | 3 | 35 |
@@ -46,7 +46,7 @@ PLACES
  Item : Water  <br />
 * ToolStore <br />
  Feature : Buy support objects <br />
- Weapon : Gun, Sword, Rifle <br /> 
+ Inventory.WearableItems.Weapon.Weapon : Gun, Sword, Rifle <br /> 
  Inventory.WearableItems.Armor : Inventory.WearableItems.Armor, Medium, Heavy
  
  ![Employee data](https://github.com/HaleGurpinar/AdventureGame/blob/master/class-diagram.jpg?raw=true

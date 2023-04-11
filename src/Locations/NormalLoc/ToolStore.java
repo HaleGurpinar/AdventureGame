@@ -1,10 +1,11 @@
 package Locations.NormalLoc;
 
+import Inventory.Inventory;
 import Inventory.WearableItems.Armor.Armor;
 import Inventory.WearableItems.Armor.Heavy;
 import Inventory.WearableItems.Armor.Light;
 import Inventory.WearableItems.Armor.Medium;
-import Inventory.WearableItems.Weapon;
+import Inventory.WearableItems.Weapon.Weapon;
 import com.patika.Player;
 import Inventory.WearableItems.WearableItem;
 
@@ -58,8 +59,30 @@ public class ToolStore extends NormalLoc {
                     "\t Defense -> "+ armor.getDefense()+
                     "\t Money -> " +armor.getMoney());
         }
+        System.out.println("-------------------------------------------------------------------------");
+        buyArmor();
     }
 
+    public void buyArmor(){
+        System.out.println("Your money: "+ getPlayer().getMoney());
+        System.out.println("0 for Upper Menu");
+        System.out.println("Enter Armor Id that you want to buy");
+        int selectArmor= scanner.nextInt();
+        switch (selectArmor){
+            case 0:
+                mainMenu();
+                break;
+            //case 1:
+
+        }
+    }
+
+    public void selectArmor(Armor armor, Inventory inventory){
+        if(getPlayer().getMoney()>=armor.getMoney()){
+            getPlayer().setArmorDefense(armor.getDefense());
+            getPlayer().setArmorName(armor.getName());
+        }
+    }
 
     public void weaponMenu() {
     }

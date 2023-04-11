@@ -4,6 +4,7 @@ import GameCharacter.Archer;
 import GameCharacter.GameChar;
 import GameCharacter.Knight;
 import GameCharacter.Samurai;
+import Inventory.Inventory;
 import Locations.Location;
 import Locations.NormalLoc.SafeHouse;
 import Locations.NormalLoc.ToolStore;
@@ -17,7 +18,13 @@ public class Player {
     private int money;
     private String name;
     private String charName;
-    //Inventory inventory;
+    private Inventory inventory;
+    private GameChar gameChar;
+    private int amount;
+    private String weaponName;
+    private String armorName;
+    private int weaponDamage;
+    private int armorDefense;
     Scanner scanner=new Scanner(System.in);
 
 
@@ -65,6 +72,45 @@ public class Player {
         this.charName = charName;
     }
 
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
+    public String getWeaponName() {
+        return weaponName;
+    }
+
+    public void setWeaponName(String weaponName) {
+        this.weaponName = weaponName;
+    }
+
+    public String getArmorName() {
+        return armorName;
+    }
+
+    public void setArmorName(String armorName) {
+        this.armorName = armorName;
+    }
+
+    public int getWeaponDamage() {
+        return weaponDamage;
+    }
+
+    public void setWeaponDamage(int weaponDamage) {
+        this.weaponDamage = weaponDamage;
+    }
+
+    public int getArmorDefense() {
+        return armorDefense;
+    }
+
+    public void setArmorDefense(int armorDefense) {
+        this.armorDefense = armorDefense;
+    }
 
     public void showCharacters(){
 
