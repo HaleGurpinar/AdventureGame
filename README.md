@@ -23,9 +23,9 @@ WEAPONS
 | Rifle | 3 | 7 | 45 |
 
 ARMORS
-| Armor | ID | Defence | Money |
+| Inventory.WearableItems.Armor | ID | Defence | Money |
 | :---: | :---: | :---: | :---: |
-| Light | 1 | 1 | 15 |
+| Inventory.WearableItems.Armor | 1 | 1 | 15 |
 | Medium | 2 | 3 | 25 |
 | Heavy | 3 | 5 | 40 |
 
@@ -47,7 +47,7 @@ PLACES
 * ToolStore <br />
  Feature : Buy support objects <br />
  Weapon : Gun, Sword, Rifle <br /> 
- Armor : Light, Medium, Heavy
+ Inventory.WearableItems.Armor : Inventory.WearableItems.Armor, Medium, Heavy
  
  ![Employee data](https://github.com/HaleGurpinar/AdventureGame/blob/master/class-diagram.jpg?raw=true
 " Class-Diagram")

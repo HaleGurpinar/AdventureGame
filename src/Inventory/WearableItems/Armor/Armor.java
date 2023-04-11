@@ -1,4 +1,6 @@
-package Inventory.WearableItems;
+package Inventory.WearableItems.Armor;
+
+import Inventory.WearableItems.WearableItem;
 
 public class Armor extends WearableItem {
 
@@ -16,7 +18,7 @@ public class Armor extends WearableItem {
     }
 
     public Armor(){
-        super(1,"Armor");
+        super(1, "Inventory/WearableItems/Armor");
     }
 
     public int getId() {
