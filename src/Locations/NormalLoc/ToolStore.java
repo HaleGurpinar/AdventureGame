@@ -72,16 +72,37 @@ public class ToolStore extends NormalLoc {
             case 0:
                 mainMenu();
                 break;
-            //case 1:
+            case 1:
+                selectArmor(new Light());
+                break;
+            case 2:
+                selectArmor(new Medium());
+                break;
+            case 3:
+                selectArmor(new Heavy());
+                break;
+            default:
+                System.out.println("---");
 
         }
     }
 
-    public void selectArmor(Armor armor, Inventory inventory){
+    public void selectArmor(Armor armor){
         if(getPlayer().getMoney()>=armor.getMoney()){
             getPlayer().setArmorDefense(armor.getDefense());
             getPlayer().setArmorName(armor.getName());
+
+            System.out.println("Got your armor successfully");
+            System.out.println("Damage Defense -> "+getPlayer().getArmorDefense());
+            getPlayer().setMoney(getPlayer().getMoney()-armor.getMoney());
+            System.out.println("--------------------------------------------------------------------");
+            mainMenu();
         }
+        else {
+            System.out.println("Insufficient Money");
+            armorMenu();
+        }
+
     }
 
     public void weaponMenu() {
