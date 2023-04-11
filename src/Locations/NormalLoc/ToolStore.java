@@ -1,7 +1,9 @@
 package Locations.NormalLoc;
 
 import Inventory.WearableItems.Armor.Armor;
+import Inventory.WearableItems.Armor.Heavy;
 import Inventory.WearableItems.Armor.Light;
+import Inventory.WearableItems.Armor.Medium;
 import Inventory.WearableItems.Weapon;
 import com.patika.Player;
 import Inventory.WearableItems.WearableItem;
@@ -49,7 +51,13 @@ public class ToolStore extends NormalLoc {
     public void armorMenu() {
         System.out.println("-------------------------------------------------------------------------");
         System.out.println("--------------------------------- ARMOR ---------------------------------");
-        Armor[] armorList={new Light(),new }
+        Armor[] armorList={new Light(),new Medium(),new Heavy()};
+        for (Armor armor:armorList){
+            System.out.println("Armor | Id -> "+ armor.getId()+
+                    "\t Name -> "+ armor.getName()+
+                    "\t Defense -> "+ armor.getDefense()+
+                    "\t Money -> " +armor.getMoney());
+        }
     }
 
 

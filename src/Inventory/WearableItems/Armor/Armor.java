@@ -18,7 +18,7 @@ public class Armor extends WearableItem {
     }
 
     public Armor(){
-        super(1, "Inventory/WearableItems/Armor");
+        super(1, "Armor");
     }
 
     public int getId() {
