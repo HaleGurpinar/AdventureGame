@@ -6,15 +6,16 @@ public class Weapon extends WearableItem {
 
     private int id;
     private String name;
-    private int defense;
+    private int damage;
     private int money;
 
-    public Weapon(int typeId, String type, int id, String name, int defense, int money) {
+    public Weapon(int typeId, String type, int id, String name, int damage, int money) {
         super(typeId, type);
         this.id = id;
         this.name = name;
-        this.defense = defense;
+        this.damage = damage;
         this.money = money;
+
     }
 
     public Weapon(){
@@ -37,12 +38,12 @@ public class Weapon extends WearableItem {
         this.name = name;
     }
 
-    public int getDefense() {
-        return defense;
+    public int getDamage() {
+        return damage;
     }
 
-    public void setDefense(int defense) {
-        this.defense = defense;
+    public void setDamage(int damage) {
+        this.damage = damage;
     }
 
     public int getMoney() {

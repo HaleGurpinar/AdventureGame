@@ -115,7 +115,7 @@ public class ToolStore extends NormalLoc {
         for (Weapon weapon:weaponList){
             System.out.println("Weapon | Id -> "+ weapon.getId()+
                     "\t Name -> "+ weapon.getName()+
-                    "\t Defense -> "+ weapon.getDefense()+
+                    "\t Defense -> "+ weapon.getDamage()+
                     "\t Money -> " +weapon.getMoney());
         }
         System.out.println("-------------------------------------------------------------------------");
@@ -146,7 +146,10 @@ public class ToolStore extends NormalLoc {
     }
 
     public void selectWeapon(Weapon weapon){
-
+        if (getPlayer().getMoney()>= weapon.getMoney()){
+            getPlayer().setWeaponDamage(weapon.getDamage());
+            getPlayer().setWeaponName(weapon.getName());
+        }
     }
 }
 
