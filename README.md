@@ -1,35 +1,35 @@
 # Adventure Game
 A text-based game with Java
 
-CHARACTERS 
+CHARACTER
 | Character | ID | Damage | Health | Money |
 | :---: | :---: | :---: | :---: | :---: |
 | Samurai | 1 | 5 | 21 | 15 |
 | Archer | 2 | 7 | 18 | 20 |
 | Knight | 3 | 8 | 24 | 5 |
 
-MONSTERS
+OBSTACLE
 | Monster | ID | Damage | Health | Money |
 | :---: | :---: | :---: | :---: | :---: |
 | Zombi | 1 | 3 | 10 | 4 |
 | Vampire | 2 | 4 | 14 | 7 |
 | Bear | 3 | 7 | 20 | 12 |
 
-WEAPONS
+WEAPON
 | Inventory.WearableItems.Weapon.Weapon | ID | Damage | Money |
 | :---: | :---: | :---: | :---: |
 | Gun | 1 | 2 | 25 |
 | Sword | 2 | 3 | 35 |
 | Rifle | 3 | 7 | 45 |
 
-ARMORS
+ARMOR
 | Inventory.WearableItems.Armor | ID | Defence | Money |
 | :---: | :---: | :---: | :---: |
 | Inventory.WearableItems.Armor | 1 | 1 | 15 |
 | Medium | 2 | 3 | 25 |
 | Heavy | 3 | 5 | 40 |
 
-PLACES
+PLACE
 * Safe House  <br />
  Feature :  Gain health  <br />
 * Cave  <br />
@@ -46,8 +46,8 @@ PLACES
  Item : Water  <br />
 * ToolStore <br />
  Feature : Buy support objects <br />
- Inventory.WearableItems.Weapon.Weapon : Gun, Sword, Rifle <br /> 
- Inventory.WearableItems.Armor : Inventory.WearableItems.Armor, Medium, Heavy
+ Weapon : Gun, Sword, Rifle <br /> 
+ Armor : Light, Medium, Heavy
  
  ![Employee data](https://github.com/HaleGurpinar/AdventureGame/blob/master/class-diagram.jpg?raw=true
 " Class-Diagram")
