@@ -8,14 +8,21 @@ public class Obstacle {
     private int damage;
     private int health;
     private int money;
+    private int fullHealth;
 
-    public Obstacle(int id, String name, int damage, int health, int money) {
+    public Obstacle(int id, String name, int damage, int health, int money, int fullHealth ) {
         this.id = id;
         this.name=name;
         this.damage = damage;
         this.health = health;
         this.money = money;
+        this.fullHealth=fullHealth;
     }
+
+    public int obstacleNumber(){
+        return (int)(Math.random()*3)+1;
+    }
+
 
     public int getId() {
         return id;
@@ -55,5 +62,13 @@ public class Obstacle {
 
     public void setMoney(int money) {
         this.money = money;
+    }
+
+    public int getFullHealth() {
+        return fullHealth;
+    }
+
+    public void setFullHealth(int fullHealth) {
+        this.fullHealth = fullHealth;
     }
 }
