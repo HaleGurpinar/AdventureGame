@@ -1,6 +1,7 @@
 package Locations.BattleLoc;
 
-import Obstacle.Obstacle;
+
+import Obstacle.Zombie;
 import com.patika.Player;
 
 public class Cave extends BattleLoc{

@@ -1,6 +1,6 @@
 package Locations.BattleLoc;
 
-import Obstacle.Obstacle;
+import Obstacle.Vampire;
 import com.patika.Player;
 
 public class Forest extends BattleLoc{

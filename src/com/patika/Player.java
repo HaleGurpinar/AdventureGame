@@ -5,6 +5,9 @@ import GameCharacter.GameChar;
 import GameCharacter.Knight;
 import GameCharacter.Samurai;
 import Inventory.Inventory;
+import Locations.BattleLoc.Cave;
+import Locations.BattleLoc.Forest;
+import Locations.BattleLoc.River;
 import Locations.Location;
 import Locations.NormalLoc.SafeHouse;
 import Locations.NormalLoc.ToolStore;
@@ -181,6 +184,20 @@ public class Player {
             case 2:
                 location=new ToolStore(this);
                 location.onLocation();
+                break;
+            case 3:
+                location=new Forest(this);
+                location.onLocation();
+                break;
+            case 4:
+                location=new Cave(this);
+                location.onLocation();
+                break;
+            case 5:
+                location=new River(this);
+                location.onLocation();
+                break;
+
         }
     }
     public void initPlayer(GameChar gameChar){

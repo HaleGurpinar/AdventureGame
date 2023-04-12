@@ -1,6 +1,6 @@
 package Locations.BattleLoc;
 
-import Obstacle.Obstacle;
+import Obstacle.Bear;
 import com.patika.Player;
 
 public class River extends BattleLoc{
