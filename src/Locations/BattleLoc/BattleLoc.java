@@ -18,6 +18,10 @@ public abstract class BattleLoc extends Location {
         return false;
     }
 
+    public void combat(){
+
+    }
+
     public Obstacle getObstacle() {
         return obstacle;
     }

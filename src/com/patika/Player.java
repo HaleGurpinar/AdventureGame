@@ -7,6 +7,7 @@ import GameCharacter.Samurai;
 import Inventory.Inventory;
 import Locations.BattleLoc.Cave;
 import Locations.BattleLoc.Forest;
+import Locations.BattleLoc.Mine;
 import Locations.BattleLoc.River;
 import Locations.Location;
 import Locations.NormalLoc.SafeHouse;
@@ -195,6 +196,10 @@ public class Player {
                 break;
             case 5:
                 location=new River(this);
+                location.onLocation();
+                break;
+            case 6:
+                location=new Mine(this);
                 location.onLocation();
                 break;
             default:
