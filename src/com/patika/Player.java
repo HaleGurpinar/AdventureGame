@@ -162,7 +162,7 @@ public class Player {
     }
 
     public void selectLoc(){
-        Location[] locations={new SafeHouse(this),new ToolStore(this)};
+        Location[] locations={new SafeHouse(this),new ToolStore(this),new Forest(this),new Cave(this),new River(this)};
         System.out.println("-------------------------------------------------------------------------");
         System.out.println("-------------------------------LOCATIONS---------------------------------");
         for(Location loc:locations){
@@ -197,6 +197,8 @@ public class Player {
                 location=new River(this);
                 location.onLocation();
                 break;
+            default:
+                System.out.println("Exit the game!!!");
 
         }
     }
