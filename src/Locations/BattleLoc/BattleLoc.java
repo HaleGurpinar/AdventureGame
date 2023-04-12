@@ -8,7 +8,21 @@ public abstract class BattleLoc extends Location {
 
     private Obstacle obstacle;
 
-    public BattleLoc(int id, Player player, String name) {
+    public BattleLoc(int id, Player player, String name, Obstacle obstacle) {
         super(id, player, name);
+        this.obstacle=obstacle;
+    }
+
+    @Override
+    public boolean onLocation() {
+        return false;
+    }
+
+    public Obstacle getObstacle() {
+        return obstacle;
+    }
+
+    public void setObstacle(Obstacle obstacle) {
+        this.obstacle = obstacle;
     }
 }
