@@ -21,6 +21,9 @@ public abstract class BattleLoc extends Location {
     public void combat(){
 
     }
+    public int hitFirst() {
+        return (int) (Math.random() * 100);
+    }
 
     public Obstacle getObstacle() {
         return obstacle;
