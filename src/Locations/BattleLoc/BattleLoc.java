@@ -17,7 +17,7 @@ public abstract class BattleLoc extends Location {
         obstacle.setHealth(obstacle.getHealth()-getPlayer().getDamage());
         System.out.println(getPlayer().getName()+" "+ getPlayer().getDamage()+" damaged");
         System.out.println(getPlayer().getName()+"'s Health -> "+ getPlayer().getHealth());
-        System.out.println(obstacle.getName()+" "+obstacle.getHealth());
+        System.out.println(obstacle.getName()+"'s Health -> "+obstacle.getHealth());
         System.out.println("--------------------------------------------------------------------");
     }
 
@@ -30,9 +30,9 @@ public abstract class BattleLoc extends Location {
         else{
             getPlayer().setHealth(getPlayer().getHealth()-sumTakenDamage);
         }
-
-
-
+        System.out.println(obstacle.getName()+" "+sumTakenDamage+" damaged");
+        System.out.println(getPlayer().getName()+"'s Health -> "+ getPlayer().getHealth());
+        System.out.println(obstacle.getName()+"'s Health -> "+obstacle.getHealth());
         System.out.println("--------------------------------------------------------------------");
     }
 
