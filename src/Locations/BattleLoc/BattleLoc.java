@@ -107,8 +107,8 @@ public abstract class BattleLoc extends Location {
 
     @Override
     public boolean onLocation() {
-
-        return true;
+        combat();
+        return getPlayer().getHealth()!=0;
     }
 
     public void combat() {
