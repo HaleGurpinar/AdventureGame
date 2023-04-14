@@ -18,7 +18,9 @@ import java.util.Scanner;
 public class Player {
 
     private int damage;
+    private int tempDamage;
     private int health;
+    private int tempHealth;
     private int money;
     private String name;
     private String charName;
@@ -29,6 +31,9 @@ public class Player {
     private String armorName;
     private int weaponDamage;
     private int armorDefense;
+    private boolean water=false;
+    private boolean food=false;
+    private boolean firewood=false;
     Scanner scanner=new Scanner(System.in);
 
 
@@ -116,6 +121,46 @@ public class Player {
         this.armorDefense = armorDefense;
     }
 
+    public int getTempDamage() {
+        return tempDamage;
+    }
+
+    public void setTempDamage(int tempDamage) {
+        this.tempDamage = tempDamage;
+    }
+
+    public int getTempHealth() {
+        return tempHealth;
+    }
+
+    public void setTempHealth(int tempHealth) {
+        this.tempHealth = tempHealth;
+    }
+
+    public boolean isWater() {
+        return water;
+    }
+
+    public void setWater(boolean water) {
+        this.water = water;
+    }
+
+    public boolean isFood() {
+        return food;
+    }
+
+    public void setFood(boolean food) {
+        this.food = food;
+    }
+
+    public boolean isFirewood() {
+        return firewood;
+    }
+
+    public void setFirewood(boolean firewood) {
+        this.firewood = firewood;
+    }
+
     public void showCharacters(){
 
         GameChar[] charList ={new Samurai(),new Archer(),new Knight()};
@@ -187,16 +232,28 @@ public class Player {
                 location.onLocation();
                 break;
             case 3:
-                location=new Forest(this);
-                location.onLocation();
+                if (isFirewood()){
+                    System.out.println("Awards were received in this place. Can't be entered again.");;
+                }else {
+                    location = new Forest(this);
+                    location.onLocation();
+                }
                 break;
             case 4:
-                location=new Cave(this);
-                location.onLocation();
+                if (isFood()) {
+                    System.out.println("Awards were received in this place. Can't be entered again.");;
+                }else {
+                    location = new Cave(this);
+                    location.onLocation();
+                }
                 break;
             case 5:
-                location=new River(this);
-                location.onLocation();
+                if (isWater()){
+                    System.out.println("Awards were received in this place. Can't be entered again.");;
+                }else {
+                    location = new River(this);
+                    location.onLocation();
+                }
                 break;
             case 6:
                 location=new Mine(this);

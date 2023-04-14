@@ -33,17 +33,37 @@ public abstract class BattleLoc extends Location {
         System.out.println(obstacle.getName()+" "+sumTakenDamage+" damaged");
         System.out.println(getPlayer().getName()+"'s Health -> "+ getPlayer().getHealth());
         System.out.println(obstacle.getName()+"'s Health -> "+obstacle.getHealth());
-        System.out.println("--------------------------------------------------------------------");
+        System.out.println("--------------------------------------------------------------------------");
+    }
+
+    public void getReward(){
+        if(obstacle.getId()==1){
+            getPlayer().setFood(true);
+            System.out.println("Got Food Award");
+        }else if (obstacle.getId()==2){
+            getPlayer().setFirewood(true);
+            System.out.println("Got Firewood Award");
+        }else if (obstacle.getId()==3){
+            getPlayer().setWater(true);
+            System.out.println("Got Water Award");
+        }
+        System.out.println("------------------------YOU ARE WINNER---------------------------------");
+    }
+
+    public void MineReward(){
+
     }
 
     @Override
     public boolean onLocation() {
-        return false;
+
+        return true;
     }
 
     public void combat(){
 
     }
+
     public int hitFirst() {
         return (int) (Math.random() * 100);
     }
