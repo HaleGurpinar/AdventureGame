@@ -18,7 +18,24 @@ public abstract class BattleLoc extends Location {
         System.out.println(getPlayer().getName()+" "+ getPlayer().getDamage()+" damaged");
         System.out.println(getPlayer().getName()+"'s Health -> "+ getPlayer().getHealth());
         System.out.println(obstacle.getName()+" "+obstacle.getHealth());
+        System.out.println("--------------------------------------------------------------------");
     }
+
+    public void monsterHit(){
+        int sumTakenDamage = obstacle.getDamage()-getPlayer().getArmorDefense();
+        if (sumTakenDamage<=0){
+            System.out.println("Defensed the damage");
+            sumTakenDamage=0;
+        }
+        else{
+            getPlayer().setHealth(getPlayer().getHealth()-sumTakenDamage);
+        }
+
+
+
+        System.out.println("--------------------------------------------------------------------");
+    }
+
     @Override
     public boolean onLocation() {
         return false;
