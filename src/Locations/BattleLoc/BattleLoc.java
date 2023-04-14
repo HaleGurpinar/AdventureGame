@@ -13,6 +13,12 @@ public abstract class BattleLoc extends Location {
         this.obstacle=obstacle;
     }
 
+    public void playerHit(){
+        obstacle.setHealth(obstacle.getHealth()-getPlayer().getDamage());
+        System.out.println(getPlayer().getName()+" "+ getPlayer().getDamage()+" damaged");
+        System.out.println(getPlayer().getName()+"'s Health -> "+ getPlayer().getHealth());
+        System.out.println(obstacle.getName()+" "+obstacle.getHealth());
+    }
     @Override
     public boolean onLocation() {
         return false;
