@@ -14,6 +14,7 @@ OBSTACLE
 | Zombi | 1 | 3 | 10 | 4 |
 | Vampire | 2 | 4 | 14 | 7 |
 | Bear | 3 | 7 | 20 | 12 |
+| Snake | 4 | Random(3-6) | 12 | -(Gain item) |
 
 WEAPON
 | Inventory.WearableItems.Weapon.Weapon | ID | Damage | Money |
@@ -51,3 +52,6 @@ PLACE
  
  ![Employee data](https://github.com/HaleGurpinar/AdventureGame/blob/master/class-diagram.jpg?raw=true
 " Class-Diagram")
+
+# TASKS
+1.
