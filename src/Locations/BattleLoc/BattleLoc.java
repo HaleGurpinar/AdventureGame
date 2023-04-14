@@ -112,6 +112,53 @@ public abstract class BattleLoc extends Location {
     }
 
     public void combat() {
+    int monsterNumber=obstacle.obstacleNumber();
+    int i = 0;
+    int whoHitFirst=hitFirst();
+    while(i < whoHitFirst){
+        if (getPlayer().getHealth()>0){
+            if (obstacle.getHealth()>0){
+                if (whoHitFirst<=50){
+                    playerHit();
+                    if (obstacle.getHealth()<=0){
+                        if (obstacle.getName().equals("Snake")){
+                            MineReward();
+                        }
+                        i++;
+                        getPlayer().setMoney(getPlayer().getMoney()+obstacle.getMoney());
+                        if (i==monsterNumber){
+                            getReward();
+                            getPlayer().selectLoc();
+                            break;
+                        }else{
+                            obstacle.setHealth(obstacle.getFullHealth());
+                        }
+                    }
+                    if (i != (obstacle.obstacleNumber())){
+                        monsterHit();
+                    }
+                }else {
+                    if (i != (obstacle.obstacleNumber())){
+                        monsterHit();
+                    }
+                    playerHit();
+                    if (obstacle.getHealth()<=0){
+                        i++;
+                        getPlayer().setMoney(getPlayer().getMoney()+obstacle.getMoney());
+                        if (i == monsterNumber){
+                            getReward();
+                            getPlayer().selectLoc();
+                            break;
+                        } else {
+                            obstacle.setHealth(obstacle.getFullHealth());
+                        }
+                    }
+                }
+            }
+        } else {
+            System.out.println("-------------------------------GAME OVER------------------------------");
+        }
+    }
 
     }
 

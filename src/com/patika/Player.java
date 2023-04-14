@@ -208,6 +208,10 @@ public class Player {
     }
 
     public void selectLoc(){
+        gameOver();
+        if (gameOver()){
+            System.out.println("-----------------------------GAME OVER-------------------------------");
+        }
         Location[] locations={new SafeHouse(this),new ToolStore(this),new Forest(this),new Cave(this),new River(this)};
         System.out.println("-------------------------------------------------------------------------");
         System.out.println("-------------------------------LOCATIONS---------------------------------");
@@ -269,6 +273,14 @@ public class Player {
         this.setCharName(gameChar.getName());
         this.setHealth(gameChar.getHealth());
         this.setMoney(gameChar.getMoney());
+    }
+
+    public boolean gameOver() {
+        if (isFirewood() && isFood() && isWater()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }
