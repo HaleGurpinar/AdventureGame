@@ -214,7 +214,7 @@ public class Player {
         if (gameOver()){
             System.out.println("-----------------------------GAME OVER-------------------------------");
         }
-        Location[] locations={new SafeHouse(this),new ToolStore(this),new Forest(this),new Cave(this),new River(this)};
+        Location[] locations={new SafeHouse(this),new ToolStore(this),new Forest(this),new Cave(this),new River(this),new Mine(this)};
         System.out.println("-------------------------------------------------------------------------");
         System.out.println("-------------------------------LOCATIONS---------------------------------");
         for(Location loc:locations){
