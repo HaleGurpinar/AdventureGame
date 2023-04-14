@@ -24,7 +24,7 @@ public abstract class BattleLoc extends Location {
         System.out.println(getPlayer().getName() + " " + getPlayer().getDamage() + " damaged");
         System.out.println(getPlayer().getName() + "'s Health -> " + getPlayer().getHealth());
         System.out.println(obstacle.getName() + "'s Health -> " + obstacle.getHealth());
-        System.out.println("--------------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------------------");
     }
 
     public void monsterHit() {
@@ -38,7 +38,7 @@ public abstract class BattleLoc extends Location {
         System.out.println(obstacle.getName() + " " + sumTakenDamage + " damaged");
         System.out.println(getPlayer().getName() + "'s Health -> " + getPlayer().getHealth());
         System.out.println(obstacle.getName() + "'s Health -> " + obstacle.getHealth());
-        System.out.println("--------------------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------------------------");
     }
 
     public void getReward() {
@@ -156,7 +156,8 @@ public abstract class BattleLoc extends Location {
                 }
             }
         } else {
-            System.out.println("-------------------------------GAME OVER------------------------------");
+            System.out.println("-------------------------------GAME OVER---------------------------------");
+            break;
         }
     }
 
