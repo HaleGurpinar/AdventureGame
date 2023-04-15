@@ -54,4 +54,4 @@ PLACE
 " Class-Diagram")
 
 # TASKS
-1.
+1. Create Mine place and Snake obstacle
