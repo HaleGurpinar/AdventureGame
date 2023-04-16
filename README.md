@@ -17,7 +17,7 @@ OBSTACLE
 | Snake | 4 | Random(3-6) | 12 | -(Gain item) |
 
 WEAPON
-| Inventory.WearableItems.Weapon.Weapon | ID | Damage | Money |
+| Weapon | ID | Damage | Money |
 | :---: | :---: | :---: | :---: |
 | Gun | 1 | 2 | 25 |
 | Sword | 2 | 3 | 35 |
@@ -54,16 +54,24 @@ PLACE
 " Class-Diagram")
 
 # TASKS
-1. Create Mine place->  <br />
-Obstacle:Snake<br />
+1. To finish the game, the zone-specific score must be added to the player's inventory after all enemies in the battle zones have been cleared. If the player can collect their rewards and return to "Safe Home", they win the game. In addition, it is not possible to re-enter the region where the award was won. <br />
+Location Reward:  <br />
+Cave -> Food <br />
+Forest -> Firewood  <br />
+River ->Water  <br />
+2. 50% chance to determine who will make the first move when the player encounters a monster. (Always the player to hit first in the current situation). <br />
+3. A new war zone should be added. The purpose of this zone is to have a chance to randomly earn money, weapons or armor from defeated opponents. <br />
+* Mine   <br />
+Monster: Snake(1-5) <br />
 Feature: War,Loot <br />
 Item: Money,Gun,Armor <br />
 
-Snake obstacle->   <br />
-ID:4 <br />
-Damage:Random(3-6) <br />
-Health:12 <br />
+* Snake   <br />
+ID: 4 <br />
+Damage: Random(3-6) <br />
+Health: 12 <br />
 Money:None(Instead of it, gain item) <br />
+
 * Items that drop from obstacles: <br />
 --Possibility of Gain Weapon: %15  <br />
  &nbsp;&nbsp; ----Possibility Gain Rifle: %20 <br />
