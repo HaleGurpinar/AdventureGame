@@ -54,4 +54,24 @@ PLACE
 " Class-Diagram")
 
 # TASKS
-1. Create Mine place and Snake obstacle
+1. Create Mine place->  <br />
+Obstacle:Snake, Feature: War,Loot, Item: Money,Gun,Armor
+
+Snake obstacle->   <br />
+ID:4, Damage:Random(3-6), Health:12, Money:None(Instead of it, gain item).
+* Items that drop from obstacles: <br />
+--Possibility of Gain Weapon: %15  <br />
+ &nbsp;&nbsp; ----Possibility Gain Rifle: %20 <br />
+ &nbsp;&nbsp; ----Possibility Gain Sword: %30 <br />
+ &nbsp;&nbsp; ----Possibility Gain Gun: %50 <br />
+--Possibility of Gain Armor: %15 <br />
+&nbsp;&nbsp; ----Possibility Gain Heavy: %20 <br />
+&nbsp;&nbsp;  ----Possibility Gain Middle: %30 <br />
+&nbsp;&nbsp;  ----Possibility Gain Light: %50 <br />
+--Possibility of Gain Money: %25 <br />
+&nbsp;&nbsp;  ----Possibility Gain 10 Money: %20 <br />
+&nbsp;&nbsp;  ----Possibility Gain 5 Money: %30 <br />
+&nbsp;&nbsp;  ----Possibility Gain 1 Money: %50 <br />
+--Can not gain anything %45 <br />
+  
+
