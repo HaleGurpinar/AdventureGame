@@ -55,10 +55,15 @@ PLACE
 
 # TASKS
 1. Create Mine place->  <br />
-Obstacle:Snake, Feature: War,Loot, Item: Money,Gun,Armor
+Obstacle:Snake<br />
+Feature: War,Loot <br />
+Item: Money,Gun,Armor <br />
 
 Snake obstacle->   <br />
-ID:4, Damage:Random(3-6), Health:12, Money:None(Instead of it, gain item).
+ID:4 <br />
+Damage:Random(3-6) <br />
+Health:12 <br />
+Money:None(Instead of it, gain item) <br />
 * Items that drop from obstacles: <br />
 --Possibility of Gain Weapon: %15  <br />
  &nbsp;&nbsp; ----Possibility Gain Rifle: %20 <br />
