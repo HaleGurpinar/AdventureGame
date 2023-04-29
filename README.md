@@ -24,9 +24,9 @@ WEAPON
 | Rifle | 3 | 7 | 45 |
 
 ARMOR
-| Inventory.WearableItems.Armor | ID | Defence | Money |
+| Armor | ID | Defence | Money |
 | :---: | :---: | :---: | :---: |
-| Inventory.WearableItems.Armor | 1 | 1 | 15 |
+| Light | 1 | 1 | 15 |
 | Medium | 2 | 3 | 25 |
 | Heavy | 3 | 5 | 40 |
 
