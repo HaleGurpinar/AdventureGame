@@ -59,7 +59,7 @@ Location Reward:  <br />
 Cave -> Food <br />
 Forest -> Firewood  <br />
 River ->Water  <br />
-2. 50% chance to determine who will make the first move when the player encounters a monster. (Always the player to hit first in the current situation). <br />
+2. 50% chance to determine who will make the first move when the player encounters a monster.(Always the player to hit first in the current situation). <br />
 3. A new war location should be added. The purpose of this location is to have a chance to randomly earn money, weapons or armor from defeated opponents. <br />
 * Mine   <br />
 Monster: Snake(1-5) <br />
